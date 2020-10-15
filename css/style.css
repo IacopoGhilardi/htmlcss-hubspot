@@ -8,15 +8,46 @@ body {
   width: 100%;
   height: 100vh;
   background: pink;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/* sezione header */
 header {
   width: 100%;
-  height: 80%;
   background: red;
 }
 
+/* TOP */
 .header-top {
-  height: 20%;
   background: lightblue;
+}
+
+.login {
+  background: grey;
+}
+
+/* /TOP */
+
+/* BOTTOM */
+.title {
+  background: blue;
+}
+
+.divider {
+  height: 30px;
+  background: orange;
+}
+
+/* /sezione header */
+
+/* sezione main */
+
+main {
+  height: 80%;
+  background: purple;
+}
+
+footer {
+  height: 20%;
+  background: green;
 }
