@@ -11,6 +11,12 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* sezione header */
 header {
   width: 100%;
@@ -19,23 +25,23 @@ header {
 
 /* TOP */
 .header-top {
-  background: lightblue;
+  background: white;
 }
 
 .login {
-  background: grey;
+  background: #bcc5cb;
 }
 
 /* /TOP */
 
 /* BOTTOM */
 .title {
-  background: blue;
+  background: lightblue;
 }
 
 .divider {
   height: 30px;
-  background: orange;
+  background: #01b1b1;
 }
 
 /* /sezione header */
@@ -43,9 +49,62 @@ header {
 /* sezione main */
 
 main {
-  height: 80%;
+  width: 100%;
   background: purple;
 }
+
+/* centratura contenuto */
+.central-content {
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+}
+
+/* prima sezione */
+.free-hub {
+  height: 200px;
+  background: orange;
+}
+
+
+.hub-columns {
+  background: yellow;
+}
+
+.col {
+  width: 31%;
+  background: red;
+  float: left;
+}
+
+.first,
+.second {
+  margin-right: 3.5%
+}
+/* /prima sezione */
+
+ /* seconda sezione */
+.second-section {
+  background: blue;
+}
+
+#block-list li {
+  list-style: none;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.block {
+
+}
+
+
+
+/* /seconda sezione */
+
+
+/* /sezione main */
 
 footer {
   height: 20%;
