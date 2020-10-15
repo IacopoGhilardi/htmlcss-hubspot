@@ -17,22 +17,23 @@ body {
   clear: both;
 }
 
+/* centratura contenuto */
+.central-content {
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+}
+
 /* sezione header */
 header {
   width: 100%;
-  background: red;
 }
 
 /* TOP */
 .header-top {
-  background: white;
+  background: #eeefee;
 }
 
-.login {
-  width: 100%;
-  background: #bcc5cb;
-  border-bottom: 2px solid black;
-}
 
 .login-lang,
 .login-button,
@@ -42,18 +43,39 @@ header {
   width: 50%;
 }
 
+.login {
+  background: #eeefee;
+  border-bottom: 2px solid black;
+  padding: 1.5%;
+}
+
+
 .login-lang li {
   list-style: none;
   display: inline-block;
+  border-right: 1px solid black;
+  padding-right: 10px;
+  font-size: .8em;
+}
+
+.login-lang > ul > li:nth-child(2) {
+  border-right: none;
+  padding-left: 10px;
+}
+
+.login-button ul {
+  text-align: right;
 }
 
 .login-button li {
   list-style: none;
   display: inline-block;
+  padding-right: 10px;
 }
 
 .logo-nav img {
   height: 50px;
+  margin-left: 0;
 }
 
 /* /TOP */
@@ -75,13 +97,6 @@ header {
 main {
   width: 100%;
   background: purple;
-}
-
-/* centratura contenuto */
-.central-content {
-  width: 70%;
-  margin: 0 auto;
-  background: white;
 }
 
 /* prima sezione */
