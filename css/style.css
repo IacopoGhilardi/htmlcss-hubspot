@@ -156,3 +156,17 @@ footer {
 .languages li {
   list-style: none;
 }
+
+.languages {
+  border-bottom: 2px solid black;
+}
+
+.languages li {
+  display: inline-block;
+}
+
+.copy,
+.legal-stuff {
+  float: left;
+  width: 50%,
+}
