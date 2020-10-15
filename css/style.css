@@ -29,7 +29,31 @@ header {
 }
 
 .login {
+  width: 100%;
   background: #bcc5cb;
+  border-bottom: 2px solid black;
+}
+
+.login-lang,
+.login-button,
+.logo-nav img,
+.logo-nav nav {
+  float: left;
+  width: 50%;
+}
+
+.login-lang li {
+  list-style: none;
+  display: inline-block;
+}
+
+.login-button li {
+  list-style: none;
+  display: inline-block;
+}
+
+.logo-nav img {
+  height: 50px;
 }
 
 /* /TOP */
@@ -88,25 +112,47 @@ main {
   background: blue;
 }
 
-#block-list li {
+.block-list li {
   list-style: none;
   width: 25%;
   float: left;
   text-align: center;
 }
 
-.block {
-
-}
-
-
 
 /* /seconda sezione */
 
+/* terza sezione */
+.numbers,
+.partners-list {
+  float: left;
+}
+
+.partners-list {
+  background: yellow;
+}
+
+.start-growing,
+.growing-block img {
+  float: left;
+  width: 50%;
+}
+
+/* /terza sezione */
 
 /* /sezione main */
 
 footer {
   height: 20%;
-  background: green;
+  background: lightblue;
+}
+
+.footer-col {
+  float: left;
+  width: 25%;
+}
+
+.footer-col ul li,
+.languages li {
+  list-style: none;
 }
