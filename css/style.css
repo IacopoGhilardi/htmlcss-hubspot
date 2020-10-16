@@ -35,6 +35,15 @@ header {
   font-size: 1.125em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #33475B;
+}
+
 /* classi liste comuni */
 .list-inline {
   height: 100%;
@@ -211,10 +220,8 @@ header {
   font-size: 3em;
   padding-top: 50px;
   margin-bottom: 20px;
-  color: #2c3d51;
 
 }
-
 
 .title > p:nth-child(2) {
   font-size: .85em;
@@ -235,7 +242,6 @@ header {
 /* /sezione header */
 
 /* sezione main */
-
 main {
   width: 100%;
   background: #F5F8FA;
@@ -255,7 +261,6 @@ main {
 #main-head h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #33475B;
 }
 
 #main-head p {
@@ -266,25 +271,72 @@ main {
 
 /* Main centrale */
 .free-hub {
-  height: 200px;
+  height: 300px;
+  margin-bottom: 40px;
   background: white;
 }
 
-.first-box {
-    float: left;
-    width: 30%;
-    text-align: center;
+.first-box,
+.second-box {
+  float: left;
+  height: 100%;
 }
+
+.first-box {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
 
 .first-box img {
-  height: 60px;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-.first-box a {
+.learn-more-btn {
   display: block;
+  margin: 0 auto;
+  width: 150px;
+  font-size: .8em;
 }
 
 
+.second-box {
+  width: 60%;
+  padding-top: 25px;
+}
+
+.second-box h3:first-child {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.second-box p {
+  font-size: 1em;
+}
+
+#feature {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+#feature::after {
+    float: right;
+    position: relative;
+    content: "";
+    width: 400px;
+    height: 1px;
+    background-color: black;
+    margin-top: .55em;
+}
+
+.second-box ol li i {
+  padding-right: 10px;
+  color: #fd7a5a;
+}
 
 .col {
   width: 31%;
