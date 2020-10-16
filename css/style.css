@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 body {
   width: 100%;
   height: 100vh;
@@ -26,6 +22,7 @@ body {
   width: 70%;
   margin: 0 auto;
 }
+
 
 .btn {
   text-decoration: none;
@@ -65,9 +62,9 @@ header {
 #login-nav {
   width: 100%;
   height: 70px;
+  position: fixed;
   background: #F4F9FD;
   border-bottom: 1px solid black;
-  position: fixed;
   top: 0;
   z-index: 3;
 }
@@ -79,7 +76,7 @@ header {
 
 /* barra nav con login */
 .login-lang li a {
-  font-size: .8em;
+  font-size: 1rem;
   color: #2c3d51;
   border-right: 1px solid black;
   padding-right: 10px;
@@ -98,7 +95,7 @@ header {
   text-decoration: underline;
 }
 
-/* LOGIN */
+/*------- LOGIN ----------*/
 .login-button {
   float: right;
 }
@@ -106,6 +103,10 @@ header {
 .login-button ul li i {
   color: #01b1b1;
   font-size: .8em;
+}
+
+.login-button ul li i:hover {
+  cursor: pointer;
 }
 
 #login,
@@ -118,21 +119,35 @@ header {
 #login {
   color: #fd7a5a;
   margin: 0 10px;
+
+}
+
+#login:hover {
+  color: white;
+  background: #fd7a5a;
+  transition: .3s;
 }
 
 .btn-hubspot {
   background: #fd7a5a;
   color: white;
 }
+
+.btn-hubspot:hover {
+  background: rgba(254, 119, 90, 0.8);
+  transition: .3s;
+}
+/* /LOGIN */
 /* /barra nav con login */
 
 
 /* header barra nav con logo */
 #logo-nav {
   margin-top: 70px;
+  height: 70px;
+  line-height: 70px;
 }
-.logo-nav-img,
-#logo-nav nav {
+.logo-nav-img {
   float: left;
 }
 
@@ -144,43 +159,24 @@ header {
   height: 70px;
 }
 
-.logo-nav-img {
-  position: relative;
-  height: 100%;
-}
-
 #logo {
-  position: relative;
-  top: 20px;
-  height: 30px;
-  margin: 0;
+  vertical-align: middle;
 }
 
 .logo-nav-bar {
-  text-align: right;
-  height: 100%;
-  width: 70%;
+  float: right;
 }
 
 .logo-nav-bar ul li {
   list-style: none;
   display: inline-block;
-  font-size: .8em;
-  margin-top: 25px;
-  color: #2c3d51
+  font-size: 1rem;
+  color: #2c3d51;
+  padding-left: 10px;
 }
-
-.logo-nav-bar ul li i {
-  /* font-size: 20px; */
-  padding-right: 15px;
-}
-
-.logo-nav-bar > .fa-chevron-down {
-}
-
-
 /* /header barra nav con logo */
 /* /TOP */
+
 
 /* BOTTOM */
 .header-bottom {
@@ -212,7 +208,7 @@ header {
 }
 
 .title h1 {
-  font-size: 48px;
+  font-size: 3em;
   padding-top: 50px;
   margin-bottom: 20px;
   color: #2c3d51;
@@ -221,21 +217,19 @@ header {
 
 
 .title > p:nth-child(2) {
-  font-size: 15px;
+  font-size: .85em;
   margin-bottom: 20px;
 }
 
-.gethub-btn {
-  color: white;
-  background: #fd7a5a;
-  border: none;
-  border-radius: 5%;
+
+.btn-big {
+  display: inline-block;
   margin-bottom: 20px;
-  padding: 15px 20px;
+  padding: 20px 25px;
 }
 
 .title > p:nth-child(4) {
-  font-size: 10px;
+  font-size: 0.7em;
 }
 
 /* /sezione header */
@@ -248,15 +242,49 @@ main {
 }
 
 /* prima sezione */
+#main-head {
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
+#main-head img {
+  height: 200px;
+}
+
+#main-head h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #33475B;
+}
+
+#main-head p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+/* Main centrale */
 .free-hub {
   height: 200px;
-  background: orange;
+  background: white;
+}
+
+.first-box {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.first-box img {
+  height: 60px;
+}
+
+.first-box a {
+  display: block;
 }
 
 
-.hub-columns {
-  background: yellow;
-}
 
 .col {
   width: 31%;
@@ -268,7 +296,8 @@ main {
 .second {
   margin-right: 3.5%
 }
-/* /prima sezione */
+/* /Main centrale */
+/* prima sezione */
 
  /* seconda sezione */
 .second-section {
@@ -281,8 +310,6 @@ main {
   float: left;
   text-align: center;
 }
-
-
 /* /seconda sezione */
 
 /* terza sezione */
