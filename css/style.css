@@ -23,6 +23,10 @@ body {
   margin: 0 auto;
 }
 
+.fa-check-circle {
+  color: #fd7a5a;
+  padding-right: 10px;
+}
 
 .btn {
   text-decoration: none;
@@ -35,12 +39,7 @@ header {
   font-size: 1.125em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   color: #33475B;
 }
 
@@ -243,7 +242,7 @@ h6 {
 
 /* sezione main */
 main {
-  width: 100%;
+  /* width: 100%; */
   background: #F5F8FA;
 }
 
@@ -333,27 +332,70 @@ main {
     margin-top: .55em;
 }
 
-.second-box ol li i {
-  padding-right: 10px;
-  color: #fd7a5a;
+/* colonne main */
+.hub-columns {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
-
 .col {
   width: 31%;
-  background: red;
+  height: 100%;
+  background: white;
   float: left;
+  text-align: center;
+  padding: 30px;
+  line-height: 30px;
+}
+
+.col img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.col h2 {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+
+.col p {
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.col ul {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.col ul li {
+  list-style: none;
+  text-align: left;
+  line-height: 20px;
+  font-size: .8;
+}
+
+
+.popolar-feat {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .first,
 .second {
   margin-right: 3.5%
 }
+
+/* /colonne main */
 /* /Main centrale */
-/* prima sezione */
+
 
  /* seconda sezione */
 .second-section {
-  background: blue;
+  background: linear-gradient(90deg, rgba(0,168,186,1) 20%, rgba(0,185,169,1) 90%);
+  margin-top: 40px;
 }
 
 .block-list li {
