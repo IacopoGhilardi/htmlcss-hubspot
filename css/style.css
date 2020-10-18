@@ -339,7 +339,6 @@ main {
 }
 .col {
   width: 31%;
-  height: 100%;
   background: white;
   float: left;
   text-align: center;
@@ -373,7 +372,7 @@ main {
   list-style: none;
   text-align: left;
   line-height: 20px;
-  font-size: .8;
+  font-size: .9em;
 }
 
 
@@ -393,20 +392,73 @@ main {
 
 
  /* seconda sezione */
-.second-section {
+.main-community {
+  margin: 0 auto;
   background: linear-gradient(90deg, rgba(0,168,186,1) 20%, rgba(0,185,169,1) 90%);
   margin-top: 40px;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.main-community p {
+  font-size: 1em;
+}
+
+#second-sec-title {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+#second-sec-title h2,
+.block h3 {
+  color: white;
+}
+
+#second-sec-title p {
+  margin-top: 30px;
+  font-size: .7em;
+}
+
+.block-list {
+  /* width: 105%; */
 }
 
 .block-list li {
   list-style: none;
-  width: 25%;
+  width: 23.5%;
   float: left;
-  text-align: center;
+  border-right: 1px solid white;
+  padding: 30px 40px;
+  line-height: 30px;
+}
+
+.block-list li:nth-child(4n + 0) {
+  border-right: 0px;
+}
+
+.block-list li:nth-child(-n + 4) {
+  border-bottom: 1px solid white;
+}
+
+.block h3 {
+  font-size: 2.4em;
+  padding: 10px;
+}
+
+.block h3::after {
+content: "+";
+display: inline-block;
+font-size: .5em;
+position: relative;
+transform: translateY(-25%);
+color: #fff;
+font-weight: 200;
 }
 /* /seconda sezione */
 
-/* terza sezione */
+/* sezione partners */
 .numbers,
 .partners-list {
   float: left;
@@ -421,8 +473,7 @@ main {
   float: left;
   width: 50%;
 }
-
-/* /terza sezione */
+/* /sezione partners */
 
 /* /sezione main */
 
@@ -452,5 +503,5 @@ footer {
 .copy,
 .legal-stuff {
   float: left;
-  width: 50%,
+  width: 50%;
 }
