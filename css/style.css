@@ -525,11 +525,11 @@ font-weight: 200;
 .growing-block img {
   float: right;
   width: 25%;
+  margin-bottom: 50px;
 }
 
 .start-growing p:nth-child(4) {
   font-size: .8em;
-  margin-bottom: 50px;
 }
 /* /main partners */
 /* /sezione main */
@@ -537,7 +537,6 @@ font-weight: 200;
 /* footer */
 footer {
   background: #32495B;
-  color: #cbd6e2;
   padding: 30px;
   height: 45%;
 }
@@ -547,6 +546,10 @@ footer {
 .footer-col h4 {
   list-style: none;
   text-transform: capitalize;
+}
+
+footer a {
+  color: #cbd6e2;
 }
 
 /* prima sezione footer */
