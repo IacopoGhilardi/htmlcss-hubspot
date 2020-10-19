@@ -11,13 +11,21 @@ body {
   font-size: 16px;
 }
 
+/* stili comuni a tutta la pagina */
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* box centratura contenuto */
+h1,h2,h3 {
+  color: #33475B;
+}
+
+a {
+  text-decoration: none;
+}
+
 .central-content {
   width: 70%;
   margin: 0 auto;
@@ -32,6 +40,7 @@ body {
   text-decoration: none;
   font-size: .85em;
 }
+/* /stili comuni a tutta la pagina */
 
 /* sezione header */
 header {
@@ -39,11 +48,7 @@ header {
   font-size: 1.125em;
 }
 
-h1,h2,h3 {
-  color: #33475B;
-}
-
-/* classi liste comuni */
+/* classi liste comuni header */
 .list-inline {
   height: 100%;
   display: inline-block;
@@ -61,11 +66,13 @@ h1,h2,h3 {
   height: 100%;
   line-height: 70px;
 }
+/* /classi liste comuni header */
 
-/* TOP */
+/* Header TOP */
 .header-top {
   width: 100%;
 }
+
 
 #login-nav {
   width: 100%;
@@ -77,6 +84,7 @@ h1,h2,h3 {
   z-index: 3;
 }
 
+
 .login-lang {
   float: left;
 }
@@ -84,7 +92,7 @@ h1,h2,h3 {
 
 /* barra nav con login */
 .login-lang li a {
-  font-size: 1rem;
+  font-size: .8em;
   color: #2c3d51;
   border-right: 1px solid black;
   padding-right: 10px;
@@ -92,7 +100,6 @@ h1,h2,h3 {
 
 .login-lang li:last-child a {
   border-right: 0px;
-  padding-left: 0;
 }
 
 .login-lang li a {
@@ -103,7 +110,7 @@ h1,h2,h3 {
   text-decoration: underline;
 }
 
-/*------- LOGIN ----------*/
+/*------- pulsante LOGIN ----------*/
 .login-button {
   float: right;
 }
@@ -145,7 +152,7 @@ h1,h2,h3 {
   background: rgba(254, 119, 90, 0.8);
   transition: .3s;
 }
-/* /LOGIN */
+/* /Pulsante LOGIN */
 /* /barra nav con login */
 
 
@@ -179,14 +186,17 @@ h1,h2,h3 {
   list-style: none;
   display: inline-block;
   font-size: 1rem;
-  color: #2c3d51;
   padding-left: 10px;
 }
+
+.logo-nav-bar ul li a {
+  color: #2c3d51;
+}
 /* /header barra nav con logo */
-/* /TOP */
+/* /Header TOP */
 
 
-/* BOTTOM */
+/* Header BOTTOM */
 .header-bottom {
   height: 700px;
   position: relative;
@@ -237,16 +247,16 @@ h1,h2,h3 {
 .title > p:nth-child(4) {
   font-size: 0.7em;
 }
-
+/* /header bottom */
 /* /sezione header */
 
 /* sezione main */
 main {
-  /* width: 100%; */
   background: #F5F8FA;
 }
 
-/* prima sezione */
+/* Main-top */
+/* titolo main-top */
 #main-head {
   text-align: center;
   padding-top: 2em;
@@ -267,8 +277,9 @@ main {
   margin: 0 auto;
   font-size: 1em;
 }
+/* /titolo main-top */
 
-/* Main centrale */
+/* main-top sezione centrale */
 .free-hub {
   height: 300px;
   margin-bottom: 40px;
@@ -301,7 +312,6 @@ main {
   font-size: .8em;
 }
 
-
 .second-box {
   width: 60%;
   padding-top: 25px;
@@ -331,8 +341,9 @@ main {
     background-color: black;
     margin-top: .55em;
 }
+/* /main-top sezione centrale */
 
-/* colonne main */
+/* main top colonne */
 .hub-columns {
   padding-bottom: 20px;
   margin-bottom: 30px;
@@ -387,12 +398,10 @@ main {
 .second {
   margin-right: 3.5%
 }
+/* /main top colonne */
+/* /Main top */
 
-/* /colonne main */
-/* /Main centrale */
-
-
- /* seconda sezione */
+/* Main-community */
 .main-community {
   margin: 0 auto;
   background: linear-gradient(90deg, rgba(0,168,186,1) 20%, rgba(0,185,169,1) 90%);
@@ -407,21 +416,22 @@ main {
   font-size: 1em;
 }
 
-#second-sec-title {
-  font-size: 1.5em;
-  margin-bottom: 40px;
-}
-
-#second-sec-title h2,
+#community-title h2,
 .block h3 {
   color: white;
 }
 
-#second-sec-title p {
+#community-title {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+#community-title p {
   margin-top: 30px;
   font-size: .7em;
 }
 
+/* blocchi community */
 .block-list li {
   width: 25%;
   height: 200px;
@@ -454,9 +464,14 @@ transform: translateY(-25%);
 color: #fff;
 font-weight: 200;
 }
-/* /seconda sezione */
+/* /blocchi community */
+/* /Main-community */
 
-/* sezione partners */
+/* main partners */
+.main-partners {
+  background: white;
+}
+
 .numbers {
   float: left;
   width: 15%;
@@ -480,13 +495,15 @@ font-weight: 200;
 
 .partners-list li {
   width: 25%;
+  padding: 20px;
   height: 100px;
   border: none;
 }
 
 .partners-list li img {
   max-height: 100%;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100px;
 }
 
 .start-growing {
@@ -514,11 +531,10 @@ font-weight: 200;
   font-size: .8em;
   margin-bottom: 50px;
 }
-
-/* /sezione partners */
-
+/* /main partners */
 /* /sezione main */
 
+/* footer */
 footer {
   background: #32495B;
   color: #cbd6e2;
@@ -533,16 +549,18 @@ footer {
   text-transform: capitalize;
 }
 
+/* prima sezione footer */
 .footer-col {
   float: left;
   width: 25%;
   line-height: 37px;
-  font-size: .9em;
+  font-size: .95em;
 }
 
 .footer-col h4 {
   font-size: 1.1em;
   padding-bottom: 10px;
+  color: white;
 }
 
 #footer-btn {
@@ -557,11 +575,9 @@ footer {
   padding-right: 20px;
   font-size: 15px;
 }
+/* /prima sezione footer */
 
-.copyright {
-  margin-top: 35px;
-}
-
+/* lingue footer */
 .languages {
   border-bottom: 1px solid white;
   padding-top: 40px;
@@ -573,6 +589,12 @@ footer {
   display: inline-block;
   padding-right: 20px;
 }
+/* /lingue footer */
+
+/* copyright */
+.copyright {
+  margin-top: 35px;
+}
 
 .copy {
   float: left;
@@ -583,6 +605,10 @@ footer {
   opacity: .7;
 }
 
+.copy p {
+  color: white;
+}
+
 .legal-stuff a {
   float: right;
   color: #cbd6e2;
@@ -590,3 +616,5 @@ footer {
   text-decoration: none;
   padding-left: 20px;
 }
+/* /copyright */
+/* /footer */
