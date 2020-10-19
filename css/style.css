@@ -637,6 +637,10 @@ footer a {
   text-align: center;
   }
 
+  .chat i {
+    font-size: 25px;
+  }
+
 .chat i:first-child {
     position: absolute;
     display: block;
@@ -644,7 +648,6 @@ footer a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
     box-shadow: 2px -2px rgb(66, 91, 118);
     z-index: 4;
   }
@@ -656,7 +659,6 @@ footer a {
     top: 50%;
     left: 50%;
     transform: translate(-35%, -65%);
-    font-size: 30px;
   }
 
 .chat:hover {
@@ -691,11 +693,12 @@ footer a {
     font-size: 1em;
   }
 
-
-
-
-
-
-
+  .chat-box p::before {
+    content: "\2613";
+    font-size: 1.4em;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
 
   /* /chat */
