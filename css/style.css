@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Monserrat",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 /* stili comuni a tutta la pagina */
@@ -20,6 +20,10 @@ body {
 
 h1,h2,h3 {
   color: #33475B;
+}
+
+p {
+  font-size: 1rem;
 }
 
 a {
@@ -36,18 +40,9 @@ a {
   padding-right: 10px;
 }
 
-.btn {
-  text-decoration: none;
-  font-size: .85em;
-}
 /* /stili comuni a tutta la pagina */
 
 /* sezione header */
-header {
-  width: 100%;
-  font-size: 1.125em;
-}
-
 /* classi liste comuni header */
 .list-inline {
   height: 100%;
@@ -73,7 +68,7 @@ header {
   width: 100%;
 }
 
-
+/* barra nav con login */
 #login-nav {
   width: 100%;
   height: 70px;
@@ -84,15 +79,12 @@ header {
   z-index: 3;
 }
 
-
 .login-lang {
   float: left;
 }
 
-
-/* barra nav con login */
 .login-lang li a {
-  font-size: .8em;
+  font-size: .9rem;
   color: #2c3d51;
   border-right: 1px solid black;
   padding-right: 10px;
@@ -102,30 +94,26 @@ header {
   border-right: 0px;
 }
 
-.login-lang li a {
-  text-decoration: none;
-}
-
 .login-lang li a:hover {
   text-decoration: underline;
 }
 
-/*------- pulsante LOGIN ----------*/
+ /* pulsante LOGIN  */
 .login-button {
   float: right;
 }
 
-.login-button ul li i {
+#search {
   color: #01b1b1;
-  font-size: .8em;
+  font-size: .9rem;
 }
-
-.login-button ul li i:hover {
+#search:hover {
   cursor: pointer;
 }
 
 #login,
 .btn-hubspot {
+  font-size: 0.9rem;
   padding: 10px 8px;
   border: 1px solid #fd7a5a;
   border-radius: 5px;
@@ -134,9 +122,7 @@ header {
 #login {
   color: #fd7a5a;
   margin: 0 10px;
-
 }
-
 #login:hover {
   color: white;
   background: #fd7a5a;
@@ -147,7 +133,6 @@ header {
   background: #fd7a5a;
   color: white;
 }
-
 .btn-hubspot:hover {
   background: rgba(254, 119, 90, 0.8);
   transition: .3s;
@@ -162,11 +147,9 @@ header {
   height: 70px;
   line-height: 70px;
 }
-.logo-nav-img {
-  float: left;
-}
 
 .logo-nav-img {
+  float: left;
   width: 30%;
 }
 
@@ -220,23 +203,22 @@ header {
 .title {
   position: relative;
 }
+
 .title h1,
 .title p {
-  width: 40%;
+  width: 50%;
 }
 
 .title h1 {
-  font-size: 3em;
+  font-size: 3.1rem;
   padding-top: 50px;
   margin-bottom: 20px;
 
 }
 
 .title > p:nth-child(2) {
-  font-size: .85em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
 
 .btn-big {
   display: inline-block;
@@ -245,22 +227,24 @@ header {
 }
 
 .title > p:nth-child(4) {
-  font-size: 0.7em;
+  font-size: 0.7rem;
+  margin-top: 30px;
 }
 /* /header bottom */
 /* /sezione header */
 
 /* sezione main */
-main {
-  background: #F5F8FA;
-}
-
 /* Main-top */
 /* titolo main-top */
+.main-top {
+  background: #F5F8FA;
+  padding: 45px;
+}
+
 #main-head {
   text-align: center;
-  padding-top: 2em;
-  margin-bottom: 2em;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 #main-head img {
@@ -268,14 +252,14 @@ main {
 }
 
 #main-head h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 
 #main-head p {
   width: 70%;
   margin: 0 auto;
-  font-size: 1em;
 }
 /* /titolo main-top */
 
@@ -293,7 +277,6 @@ main {
 }
 
 .first-box {
-  float: left;
   width: 30%;
   text-align: center;
 }
@@ -309,7 +292,7 @@ main {
   display: block;
   margin: 0 auto;
   width: 150px;
-  font-size: .8em;
+  font-size: .9rem;
 }
 
 .second-box {
@@ -318,17 +301,13 @@ main {
 }
 
 .second-box h3:first-child {
-  font-size: 1.5em;
+  font-size: 1.6rem;
   margin-top: 30px;
   margin-bottom: 40px;
 }
 
-.second-box p {
-  font-size: 1em;
-}
-
 #feature {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -339,23 +318,24 @@ main {
     width: 400px;
     height: 1px;
     background-color: black;
-    margin-top: .55em;
+    margin-top: .6rem;
 }
 /* /main-top sezione centrale */
 
 /* main top colonne */
-.hub-columns {
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-}
 .col {
   width: 31%;
-  background: white;
-  text-align: center;
-  float: left;
   padding: 30px;
+  float: left;
+  background: white;
   line-height: 30px;
+  text-align: center;
   box-shadow: 0 0 11px #eaf0f6;
+}
+
+.first,
+.second {
+  margin-right: 3.35%
 }
 
 .col img {
@@ -365,7 +345,7 @@ main {
 }
 
 .col h2 {
-  font-size: 1.4em;
+  font-size: 1.6rem;
   margin-bottom: 25px;
 }
 
@@ -376,44 +356,32 @@ main {
 }
 
 .col ul {
-  text-align: center;
   margin-bottom: 35px;
 }
 
 .col ul li {
   list-style: none;
-  text-align: left;
+  text-align: justify;
   line-height: 20px;
-  font-size: .9em;
+  font-size: .9rem;
 }
 
 
 .popolar-feat {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   text-transform: uppercase;
   margin-bottom: 25px;
-}
-
-.first,
-.second {
-  margin-right: 3.5%
 }
 /* /main top colonne */
 /* /Main top */
 
 /* Main-community */
 .main-community {
-  margin: 0 auto;
   background: linear-gradient(90deg, rgba(0,168,186,1) 20%, rgba(0,185,169,1) 90%);
-  margin-top: 40px;
   text-align: center;
   color: white;
   padding-top: 50px;
   padding-bottom: 100px;
-}
-
-.main-community p {
-  font-size: 1em;
 }
 
 #community-title h2,
@@ -422,13 +390,12 @@ main {
 }
 
 #community-title {
-  font-size: 1.5em;
+  font-size: 1.4rem;
   margin-bottom: 40px;
 }
 
 #community-title p {
   margin-top: 30px;
-  font-size: .7em;
 }
 
 /* blocchi community */
@@ -451,14 +418,14 @@ main {
 }
 
 .block h3 {
-  font-size: 2.4em;
+  font-size: 2.3rem;
   padding: 10px;
 }
 
 .block h3::after {
 content: "+";
 display: inline-block;
-font-size: .5em;
+font-size: 1.3rem;
 position: relative;
 transform: translateY(-25%);
 color: #fff;
@@ -481,7 +448,7 @@ font-weight: 200;
 }
 
 .numbers h2 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 40px;
 }
 
@@ -509,12 +476,12 @@ font-weight: 200;
 
 .start-growing {
   float: left;
-  width: 40%;
+  width: 45%;
   line-height: 30px;
 }
 
 .start-growing h2 {
-  font-size: 2.3em;
+  font-size: 2.3rem;
   margin: 30px 0;
 }
 
@@ -527,10 +494,6 @@ font-weight: 200;
   float: right;
   width: 25%;
   margin-bottom: 50px;
-}
-
-.start-growing p:nth-child(4) {
-  font-size: .8em;
 }
 /* /main partners */
 /* /sezione main */
@@ -558,11 +521,11 @@ footer a {
   float: left;
   width: 25%;
   line-height: 37px;
-  font-size: .95em;
+  font-size: .95rem;
 }
 
 .footer-col h4 {
-  font-size: 1.1em;
+  font-size: 1.05rem;
   padding-bottom: 10px;
   color: white;
 }
@@ -570,7 +533,7 @@ footer a {
 #footer-btn {
   color: #32495B;
   background: #cbd6e2;
-  font-size: .9em;
+  font-size: .9rem;
   padding: 10px 15px;
   border-radius: 3px;
 }
@@ -689,16 +652,11 @@ footer a {
     height: 40px;
   }
 
-  .chat-box p {
-    font-size: 1em;
-  }
-
   .chat-box p::before {
     content: "\2613";
-    font-size: 1.4em;
+    font-size: 1.4rem;
     position: absolute;
     top: 0;
     right: 10px;
   }
-
   /* /chat */
